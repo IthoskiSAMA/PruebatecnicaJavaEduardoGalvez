@@ -1,0 +1,59 @@
+version: '3.9'
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: microservicios
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: banco
+      MYSQL_USER: eduardog
+      MYSQL_PASSWORD: edugalcar
+    networks:
+      - my-network
+
+  rabbitmq:
+    container_name: rabbitmq-container
+    image: rabbitmq:3-management
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+    environment:
+      RABBITMQ_DEFAULT_USER: egalvez
+      RABBITMQ_DEFAULT_PASS: edugalcar
+    networks:
+      - my-network
+
+  cliente_persona:
+    build:
+      context: ./cliente-persona
+    container_name: cliente-persona-container
+    ports:
+      - "8081:8080"
+    depends_on:
+      - mysql
+      - rabbitmq
+    networks:
+      - my-network
+
+  cuenta_movimientos:
+    build:
+      context: ./cuenta-movimientos
+    container_name: cuenta-movimientos-container
+    ports:
+      - "8082:8080"
+    depends_on:
+      - mysql
+      - rabbitmq
+    networks:
+      - my-network
+
+volumes:
+  mysql-data:
+
+networks:
+  my-network:
+    driver: bridge

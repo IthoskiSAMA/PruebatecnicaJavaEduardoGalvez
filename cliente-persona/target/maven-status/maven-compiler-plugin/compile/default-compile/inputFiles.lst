@@ -1,0 +1,8 @@
+C:\Users\eduga\OneDrive\Desktop\EduardoGalvezCarmigniani\cliente-persona\src\main\java\com\microservicio\cliente_persona\ClientePersonaApplication.java
+C:\Users\eduga\OneDrive\Desktop\EduardoGalvezCarmigniani\cliente-persona\src\main\java\com\microservicio\cliente_persona\controller\ClienteController.java
+C:\Users\eduga\OneDrive\Desktop\EduardoGalvezCarmigniani\cliente-persona\src\main\java\com\microservicio\cliente_persona\dto\ClienteDTO.java
+C:\Users\eduga\OneDrive\Desktop\EduardoGalvezCarmigniani\cliente-persona\src\main\java\com\microservicio\cliente_persona\messaging\RabbitMQProducer.java
+C:\Users\eduga\OneDrive\Desktop\EduardoGalvezCarmigniani\cliente-persona\src\main\java\com\microservicio\cliente_persona\model\Cliente.java
+C:\Users\eduga\OneDrive\Desktop\EduardoGalvezCarmigniani\cliente-persona\src\main\java\com\microservicio\cliente_persona\model\Persona.java
+C:\Users\eduga\OneDrive\Desktop\EduardoGalvezCarmigniani\cliente-persona\src\main\java\com\microservicio\cliente_persona\repository\ClienteRepository.java
+C:\Users\eduga\OneDrive\Desktop\EduardoGalvezCarmigniani\cliente-persona\src\main\java\com\microservicio\cliente_persona\service\ClienteService.java

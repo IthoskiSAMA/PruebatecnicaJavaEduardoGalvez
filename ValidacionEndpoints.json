@@ -1,0 +1,79 @@
+{
+  "info": {
+    "name": "Validación de Endpoints",
+    "_postman_id": "1234-5678-90ab-cdef",
+    "description": "Colección para validar los endpoints de la aplicación.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Crear Cliente",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nombre\": \"José Lema\",\n  \"direccion\": \"Otavalo sn y principal\",\n  \"telefono\": \"098254785\",\n  \"contrasena\": \"1234\",\n  \"estado\": true\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/cliente",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "cliente"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Crear Cuenta",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"numero_cuenta\": \"478758\",\n  \"tipo\": \"Ahorros\",\n  \"saldo_inicial\": 2000,\n  \"estado\": true,\n  \"cliente_id\": 1\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/cuenta",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "cuenta"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Registrar Movimiento",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"numero_cuenta\": \"478758\",\n  \"tipo\": \"Retiro\",\n  \"monto\": 575,\n  \"saldo_disponible\": 1425,\n  \"fecha\": \"2022-02-10\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/movimiento",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "movimiento"
+          ]
+        }
+      }
+    }
+  ]
+}

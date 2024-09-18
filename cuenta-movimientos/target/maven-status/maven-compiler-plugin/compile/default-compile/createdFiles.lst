@@ -1,0 +1,13 @@
+com\microservicio\cuenta_movimientos\controller\MovimientoController.class
+com\microservicio\cuenta_movimientos\controller\ReporteController.class
+com\microservicio\cuenta_movimientos\service\CuentaService.class
+com\microservicio\cuenta_movimientos\repository\MovimientoRepository.class
+com\microservicio\cuenta_movimientos\CuentaMovimientosApplication.class
+com\microservicio\cuenta_movimientos\controller\CuentaController.class
+com\microservicio\cuenta_movimientos\messaging\RabbitMQConsumer.class
+com\microservicio\cuenta_movimientos\repository\CuentaRepository.class
+com\microservicio\cuenta_movimientos\model\Cuenta.class
+com\microservicio\cuenta_movimientos\service\ReporteService.class
+com\microservicio\cuenta_movimientos\model\Movimiento.class
+com\microservicio\cuenta_movimientos\service\MovimientoService.class
+com\microservicio\cuenta_movimientos\dto\ReporteDTO.class

@@ -1,0 +1,8 @@
+com\microservicio\cliente_persona\controller\ClienteController.class
+com\microservicio\cliente_persona\model\Persona.class
+com\microservicio\cliente_persona\service\ClienteService.class
+com\microservicio\cliente_persona\ClientePersonaApplication.class
+com\microservicio\cliente_persona\messaging\RabbitMQProducer.class
+com\microservicio\cliente_persona\repository\ClienteRepository.class
+com\microservicio\cliente_persona\dto\ClienteDTO.class
+com\microservicio\cliente_persona\model\Cliente.class
